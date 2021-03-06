@@ -1,0 +1,34 @@
+<html> 
+ <body>
+ 	<script>
+ 		var a = 'cc';
+ 		console.log(a);
+
+ 		let cac = (one,two = 3)=> {
+ 			return one+two;
+ 		}
+
+ 		console.log(cac(1));
+
+ 		class Student{
+ 			 name='';
+ 			 email='';
+
+ 			constructor(name,email){
+                this.name = name;
+                this.email = email;
+ 			}
+ 			getInfor()
+ 			{
+ 				return `
+ 				   tên em la:${this.name}
+ 				   <br>
+ 				   email em la:${this.email}
+ 				 `
+ 			}
+ 		}
+ 		let student = new Student('name','email.com');
+ 		console.log(student.getInfor());
+ 	</script>
+ 	</body>
+</html>

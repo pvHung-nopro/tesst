@@ -1,0 +1,44 @@
+<html> 
+<head>
+	<title> vue 3</title>
+	<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+     <div id="app">
+     	  {{name}}
+     	   <a href="#" @click="getElement()"> link  </a>
+     	   {{count}}
+     	   <br/>
+     	   <a href="#" @click="getCount()"> lol  </a>
+      </div>
+    
+		<script src="https://unpkg.com/vue@next"></script>
+	  <script>
+	  	
+	      Vue.createApp({
+	      	 data(){
+	      	 	return{
+	      	 		name: 'a',
+	      	 		count:1
+	      	 	}
+	      	 },
+	      	 methods: {
+                getElement() {
+                	 alert(this.name)
+                },
+                getCount()
+                {
+                	this.count +=1
+                }
+	      	 },
+	      	 mounted(){
+	      	 	// setInterval(()=>{
+	      	 	// 	this.count += 1
+	      	 	// },1)
+	      	 }
+
+	      }).mount('#app')
+	  </script>
+	
+</body>
+</html>
